@@ -1,19 +1,5 @@
-/*
- * Copyright 2020 the original author or authors.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      https://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
 
+// Implementation from a talk by Thomas Risberg
 package com.springdeveloper.support.cloudevents;
 
 import java.net.URI;
@@ -32,16 +18,7 @@ import org.apache.commons.logging.LogFactory;
 
 import org.springframework.messaging.Message;
 
-/**
- * Simple implementation of a CloudEvent Mapper that maps headers from a SpringMessage to a 
- * {@code io.cloudevents.CloudEvent}. It adds the message payload as 'data' mapped to the provided 
- * 'mappedClass' using an OjectMapper.
- * 
- * <p>Expect this implementation to be replaced with one provided in Spring CLoud Function in 
- * the near future.
- *
- * @author Thomas Risberg
- */
+
 public class CloudEventMapper {
 
     final static String CE_ID = "ce-id";
